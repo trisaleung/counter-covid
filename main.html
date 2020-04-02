@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="./main.css"/>
-        <style src="./main.js"/>
-        <link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display&display=swap" rel="stylesheet">
+        <link href="main.css"/>
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display&display=swap" rel="stylesheet"/>
         <title>counter covid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="outsideBox">
-            <p id="confirmedCases"></p>
-            <p id="labelText">confirmed cases</p>
+            <p id="confirmedCases">{NUM}</p>
+            <p class="labelText">confirmed cases</p>
 
-            <p id="recoveries"></p>
-            <p id="labelText">recoveries</p>
+            <p id="recoveries">{NUM}</p>
+            <p class="labelText">recoveries</p>
 
-            <p id="deaths"></p>
-            <p id="labelText">deaths</p>
+            <p id="deaths">{NUM}</p>
+            <p class="labelText">deaths</p>
         </div>
         <div id="buttons">
             <button>do i have symptoms?</button>

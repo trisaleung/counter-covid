@@ -1,4 +1,29 @@
+#outsideBox {
+    text-align: center;
+    width: 50vw;
+    margin-left: 20%;
+    padding: 5%;
+    border: 1px solid black;
+    margin-top: 7%;
+}
 #confirmedCases {
     font-family: 'Playfair Display', serif;
-    font-size: 3em;
+    font-size: 6vw;
+    margin-bottom: 3%;
+    margin-top: -2%;
+}
+
+#recoveries {
+    font-family: 'Playfair Display', serif;
+    font-size: 2vw;
+}
+
+#deaths {
+    font-family: 'Playfair Display', serif;
+    font-size: 2vw;
+}
+
+.labelText {
+    margin-top: -4%;
+    font-family: 'Fauna One', serif;
 }
