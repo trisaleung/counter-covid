@@ -26,4 +26,31 @@
 .labelText {
     margin-top: -4%;
     font-family: 'Fauna One', serif;
+    font-size: 1vw;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 15vw 15vw;
+    grid-column-gap: 5vw;
+    margin-left: 27%;
+    padding: 5%;
+}
+
+.buttonText {
+    font-size: 1vw;
+    padding: 5%;
+    transition: 0.5s;
+}
+
+.buttonText:hover {
+    font-size: 1vw;
+    padding: 5%;
+    transition: 0.5s;
+}
+
+.buttonText:focus {
+    font-size: 1vw;
+    padding: 5%;
+    transition: 0.5s;
 }
