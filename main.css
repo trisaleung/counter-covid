@@ -1,11 +1,15 @@
+#background {
+    background-color: #E5E5E5;
+}
 #outsideBox {
     text-align: center;
     width: 50vw;
     margin-left: 20%;
     padding: 5%;
-    border: 1px solid black;
+    border: 3px solid #B23B3B;
     margin-top: 7%;
 }
+
 #confirmedCases {
     font-family: 'Playfair Display', serif;
     font-size: 6vw;
@@ -41,16 +45,26 @@
     font-size: 1vw;
     padding: 5%;
     transition: 0.5s;
+    background-color: #B23B3B;
+    color: #EAEAEA;
+    border: none;
+    font-family: 'Fauna One', serif;
 }
 
 .buttonText:hover {
     font-size: 1vw;
     padding: 5%;
     transition: 0.5s;
+    background-color: #CB5757;
+    border-radius: 15px;
+    border: none;
+}
+
+.buttonText:active {
+    background-color: #A32525;
+    border-radius: 40px;
 }
 
 .buttonText:focus {
-    font-size: 1vw;
-    padding: 5%;
-    transition: 0.5s;
+    outline: 0;
 }
