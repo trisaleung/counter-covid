@@ -1,3 +1,4 @@
+//Styling/animating front-end
 $(document).ready(function() {
     //Symptoms popup window appears on click, closes when x is clicked
     $(".symptoms").on("click", function(){
@@ -21,3 +22,16 @@ $(document).ready(function() {
         $(".symptoms").attr("disabled", false);
     });
 });
+
+//Connecting API
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://bing.com/covid/data', true);
+
+request.onload = function() {
+    var data = JSON.parse(this.response);
+
+    console.log(data);
+}
+
+request.send()
