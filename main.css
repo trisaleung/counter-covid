@@ -69,26 +69,22 @@
     outline: 0;
 }
 
-.popupSymptoms {
+.safety:disabled, .symptoms:disabled {
+    background-color: #882121;
+}
+
+.popupSymptoms, .popupSafety {
     visibility: hidden;
     background: #FFFFFF;
     width: 50%;
     height: 30%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     margin-top: 10%;
     border: 3px solid black;
     font-family: 'Fauna One', serif;
 }
 
-.popupSymptomsContent {
-    visibility: hidden;
-}
-
-.popupSymptoms.active {
-    visibility: visible;
-}
-
-.popupSymptoms.active {
+.popupSymptoms.active, .popupSafety.active {
     visibility: visible;
 }
