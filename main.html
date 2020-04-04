@@ -2,10 +2,99 @@
 <html>
     <head>
         <link href="main.css"/>
-        <script src="main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display&display=swap" rel="stylesheet"/>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="main.js"></script>
         <title>counter covid</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            $(".open").on("click", function(){
+                $(".popup, .popup-content").addClass("active");
+            });
+        </script>
+        <style>
+            #background {
+                background-color: #E5E5E5;
+            }
+            #outsideBox {
+                text-align: center;
+                width: 50vw;
+                margin-left: 20%;
+                padding: 5%;
+                border: 3px solid #B23B3B;
+                margin-top: 7%;
+                position: absolute;
+                z-index: 1;
+            }
+
+            #confirmedCases {
+                font-family: 'Playfair Display', serif;
+                font-size: 6vw;
+                margin-bottom: 3%;
+                margin-top: -2%;
+            }
+
+            #recoveries {
+                font-family: 'Playfair Display', serif;
+                font-size: 2vw;
+            }
+
+            #deaths {
+                font-family: 'Playfair Display', serif;
+                font-size: 2vw;
+            }
+
+            .labelText {
+                margin-top: -4%;
+                font-family: 'Fauna One', serif;
+                font-size: 1vw;
+            }
+
+            #buttons {
+                display: grid;
+                grid-template-columns: 15vw 15vw;
+                grid-column-gap: 5vw;
+                margin-left: 27%;
+                padding: 5%;
+                margin-top: 40vw;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .buttonText {
+                font-size: 1vw;
+                padding: 5%;
+                transition: 0.5s;
+                background-color: #B23B3B;
+                color: #EAEAEA;
+                border: none;
+                font-family: 'Fauna One', serif;
+            }
+
+            .buttonText:hover {
+                font-size: 1vw;
+                padding: 5%;
+                transition: 0.5s;
+                background-color: #CB5757;
+                border-radius: 15px;
+                border: none;
+            }
+
+            .buttonText:active {
+                background-color: #A32525;
+                border-radius: 40px;
+            }
+
+            .buttonText:focus {
+                outline: 0;
+            }
+
+            #popupSymptoms {
+                margin-top: 10%;
+                position: absolute;
+                z-index: 2;
+            }
+        </style>
     </head>
     <body id="background">
         <div id="outsideBox">
@@ -22,17 +111,16 @@
             <button class="buttonText" id="symptoms">do i have symptoms?</button>
             <button class="buttonText" id="safety">how do i stay safe?</button>
         </div>
-        <div id="popup-symptoms">
-            <p>
+        <div id="popupSymptoms">
+            <span id="popupSymptomsClose">&times;</span>
+            <div id="popupSymptomsContent">
                 symptoms
-            </p>
-            <div class="close">close</div>
+            </div>
         </div>
-        <div id="popup-safety">
+        <!-- <div id="popupSafety">
             <p>
                 staying safe!
             </p>
-            <div class="close">close</div>
-        </div>
+        </div> -->
     </body>
 </html>
