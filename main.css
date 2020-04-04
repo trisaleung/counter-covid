@@ -19,12 +19,7 @@
     margin-top: -2%;
 }
 
-#recoveries {
-    font-family: 'Playfair Display', serif;
-    font-size: 2vw;
-}
-
-#deaths {
+#recoveries, #deaths {
     font-family: 'Playfair Display', serif;
     font-size: 2vw;
 }
@@ -46,7 +41,7 @@
     z-index: 1;
 }
 
-.buttonText {
+.safety, .symptoms {
     font-size: 1vw;
     padding: 5%;
     transition: 0.5s;
@@ -56,7 +51,7 @@
     font-family: 'Fauna One', serif;
 }
 
-.buttonText:hover {
+.safety:hover, .symptoms:hover {
     font-size: 1vw;
     padding: 5%;
     transition: 0.5s;
@@ -65,18 +60,35 @@
     border: none;
 }
 
-.buttonText:active {
+.safety:active, .symptoms:active {
     background-color: #A32525;
     border-radius: 40px;
 }
 
-.buttonText:focus {
+.safety:focus, .symptoms:active {
     outline: 0;
 }
 
-#popup-symptoms {
+.popupSymptoms {
     visibility: hidden;
+    background: #FFFFFF;
+    width: 50%;
+    height: 30%;
     position: absolute;
     z-index: 2;
     margin-top: 10%;
+    border: 3px solid black;
+    font-family: 'Fauna One', serif;
+}
+
+.popupSymptomsContent {
+    visibility: hidden;
+}
+
+.popupSymptoms.active {
+    visibility: visible;
+}
+
+.popupSymptoms.active {
+    visibility: visible;
 }
