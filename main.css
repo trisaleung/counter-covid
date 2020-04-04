@@ -8,6 +8,8 @@
     padding: 5%;
     border: 3px solid #B23B3B;
     margin-top: 7%;
+    position: absolute;
+    z-index: 1;
 }
 
 #confirmedCases {
@@ -39,6 +41,9 @@
     grid-column-gap: 5vw;
     margin-left: 27%;
     padding: 5%;
+    margin-top: 40vw;
+    position: absolute;
+    z-index: 1;
 }
 
 .buttonText {
@@ -67,4 +72,11 @@
 
 .buttonText:focus {
     outline: 0;
+}
+
+#popup-symptoms {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
 }
