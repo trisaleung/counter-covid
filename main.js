@@ -23,15 +23,18 @@ $(document).ready(function() {
     });
 });
 
-//Connecting API
-var request = new XMLHttpRequest();
-
-request.open('GET', 'https://bing.com/covid/data', true);
-
-request.onload = function() {
-    var data = JSON.parse(this.response);
-
-    console.log(data);
+//API
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=Canada",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+		"x-rapidapi-key": "de9e1637b8mshd81421165585da7p1e53a9jsn2e7c41779c92"
+	}
 }
 
-request.send()
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
